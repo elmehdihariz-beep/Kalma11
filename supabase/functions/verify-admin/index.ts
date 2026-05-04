@@ -49,11 +49,11 @@ Deno.serve(async (req: Request) => {
       status: 401,
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
-  }
-  catch (err) {
+  } catch (err) {
   console.error(err);
   return new Response(JSON.stringify({ error: "Internal server error" }), {
     status: 500,
     headers: { ...corsHeaders, "Content-Type": "application/json" },
   });
 }
+});
