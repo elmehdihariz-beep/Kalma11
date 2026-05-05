@@ -12,6 +12,7 @@ import Contact from './components/Contact';
 import { AdBanner, InFeedAd } from './components/AdBanner';
 import NewsTicker from './components/NewsTicker';
 import { Plus, Loader2, RefreshCw, TrendingUp } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 const SORT_OPTIONS = [
   { key: 'trending', label: 'الأكثر تداولاً' },
@@ -226,6 +227,8 @@ export default function App() {
           onPostCreated={fetchPosts}
         />
       )}
+
+      <Analytics />
     </div>
   );
 }
