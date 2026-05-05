@@ -35,7 +35,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [activeCategory, setActiveCategory] = useState('الكل');
   const [searchQuery, setSearchQuery] = useState('');
-  const [sortKey, setSortKey] = useState('trending');
+  const [sortKey, setSortKey] = useState('newest');
   const [adminOpen, setAdminOpen] = useState(false);
   const hash = useHash();
 
